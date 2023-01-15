@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>iDEC - International Directed Evolution Competition</title>
+
+  <!-- Bootstrap -->
+  <link href="../css/bootstrap-4.4.1.css" rel="stylesheet">
+
+  <!-- iDEC CSS stylesheet -->
+  <link rel="stylesheet" href="../css/style.css">
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="57x57" href="../img/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="../img/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="../img/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="../img/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="../img/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="../img/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="../img/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="../img/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="../img/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="../img/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="../img/favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="../img/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="../index.html"><img src="../img/logo.png" alt="idec-logo" style="width:40px;"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span
+        class="navbar-toggler-icon"></span> </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active"> <a class="nav-link" href="../index.html" style="color: #2a206a;">Home <span
+              class="sr-only">(current)</span></a> </li>
+        <li class="nav-item"> <a class="nav-link" href="news.html" style="color: #2a206a;">News and Announcements</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false" style="color: #4B0082;"> Registration </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="details_for_registration.html" style="color: #2a206a;">Details you need</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="https://reg.idec.io" style="color: #2a206a;">Register for iDEC 2021</a>
+          </div>
+        </li>
+        <li class="nav-item"> <a class="nav-link" href="about_us.html" style="color: #2a206a;">About us</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="calendar.html" style="color: #2a206a;">iDEC calendar</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="results.html" style="color: #2a206a;">Results</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="https://wiki.idec.io/resources/introduction"
+            target="_blank" style="color: #2a206a;">Resources</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="https://arxiv.idec.io/" target="_blank"
+            style="color: #2a206a;">idecRχiv</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="tracks_and_awards.html" style="color: #2a206a;">Tracks and
+            awards</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="requirements.html" style="color: #2a206a;">Requirements</a>
+        </li>
+        <li class="nav-item"> <a class="nav-link" href="ethics_biosafety_and_biosecurity.html"
+            style="color: #2a206a;">Ethics, Biosafety and Biosecurity</a> </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0 d-none">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+
+  <section>
+    <div class="container">
+      <div class="row my-4">
+        <div class="col-lg-12 text-center">
+          <h1>Tracks</h1>
+        </div>
+      </div>
+      <div class="row my-2">
+        <div class="col-lg-8 offset-lg-2 mt-2">
+          <p>How to come up with an idea for your research?</p>
+          <p>iDEC has designed different tracks to accept various types of research.</p>
+          <p>You may get some inspiration here!</p>
+          <p>Your research project can participate in the following Tracks:</p>
+          <ol class="text-list">
+            <li><a class="general-hyperlink" href="#track1"><i class="fas fa-shapes"></i> Molecular
+                Directed Evolution</a></li>
+            <li><a class="general-hyperlink" href="#track2"><i class="fas fa-project-diagram"></i>
+                Pathway Directed Evolution</a></li>
+            <li><a class="general-hyperlink" href="#track3"><i class="fas fa-dna"></i> Genomes Directed
+                Evolution</a></li>
+            <li><a class="general-hyperlink" href="#track3"><i class="fas fa-rocket"></i> Challenge
+                (This track is not available for 2021)</a></li>
+          </ol>
+        </div>
+      </div>
+      <div class="row my-4">
+        <div class="col-lg-8 offset-lg-2 mt-2">
+          <p><strong style="font-size: 2em; color: #2a206a">Note:</strong></p>
+          <ul class="text-list">
+            <li>Our challenge track will only be open if there are scientists or companies set a
+              challenge. Since the executive committee approves no feasible challenge topic at the moment, we will keep
+              this track vacant this year and open it in the future.</li>
+            <li>Each team can participate in multiple tracks.</li>
+            <li>The teams need to decide the ownership of tracks before <strong>June 15</strong>.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row my-4">
+        <div class="col-lg-8 offset-lg-2 my-2">
+          <hr />
+        </div>
+      </div>
+
+      <div class="row my-4">
+        <div class="col-12 my-2 text-center">
+          <h2 id="track1">1. <i class="fas fa-shapes"></i> Molecular Directed Evolution</h2>
+        </div>
+        <div class="col-lg-8 offset-lg-2 mt-2">
+          <p>The first class usually refers to the directed evolution in a narrow and more conventional sense where the
+            targets are typically individual biomacromolecules: protein- and nucleic acid-binders, or their enzyme
+            variants. Any directed evolution project with molecules as an object meets the definition of this track.</p>
+        </div>
+        <div class="col-lg-12 my-2 text-center">
+          <h4>Track IA: Molecular Evolutionary Machines</h4>
+        </div>
+        <div class="col-lg-8 offset-lg-2 mt-2">
+          <p>Including projects dedicated to developing new technologies related to molecular directed evolution, such
+            as screening assays or variant generation.</p>
+          <p>There are no requirements for novel evolutionary output, but iDEC requires the original design of molecular
+            directed evolution technology or optimization of existing technology.</p>
+        </div>
+        <div class="col-lg-12 my-2 text-center">
+          <h4>Track IB: Molecular Evolutionary Outcomes</h4>
+        </div>
+        <div class="col-lg-8 offset-lg-2 mt-2">
+          <p>Inlcuding projects dedicated to applying directed evolution technology to valuable target molecules. The
+            goal of the project should be obtaining directed evolutionary output with scientific or industrial value.
+          </p>
+          <p>There are no technological innovation requirements, but iDEC requires complete directed evolution circles
+            and a superior directed evolution output.</p>
+        </div>
+      </div>
+
+      <div class="row my-4">
+        <div class="col-lg-8 offset-lg-2 my-2">
+          <hr />
+        </div>
+      </div>
+
+      <div class="row my-4">
+        <div class="col-12 my-2 text-center">
+          <h2 id="track2">2. <i class="fas fa-project-diagram"></i> Pathway Directed Evolution</h2>
+        </div>
+        <div class="col-lg-8 offset-lg-2 mt-2">
+          <p>The second class is for the directed evolutionary strategies aimed at optimization of metabolic pathways
+            and/or regulatory synthetic circuits.</p>
+          <p>Simply put, this type of project would involve construction, genetic diversification and screening, of the
+            most robust, orthogonal to the host physiology and efficient in the production of desired trait molecules.
+            This type of a project may not necessarily involve genetic changes of any component of genetic circuit but
+            it should be directed to improve their relative ratios, order and kinetics of their expression, feedback
+            control mechanisms and other types of their co-regulation.</p>
+        </div>
+        <div class="col-12 my-2 text-center">
+          <h4>Track IIA: Pathway Evolutionary Machines</h4>
+        </div>
+        <div class="col-lg-8 offset-lg-2 mt-2">
+          <p>Including projects dedicated to developing new technologies related to pathway directed evolution.</p>
+          <p>There are no requirements for novel evolutionary output, but iDEC requires the original design of pathway
+            directed evolution technology or optimization of existing technology.
+          </p>
+        </div>
+        <div class="col-lg-12 my-2 text-center">
+          <h4>Track IIB: Pathway Evolutionary Outcomes</h4>
+        </div>
+        <div class="col-lg-8 offset-lg-2 mt-2">
+          <p>Including projects dedicated to applying directed evolution technology to valuable target pathways. The
+            goal of the project should be obtaining directed evolutionary output with scientific or industrial value.
+          </p>
+          <p>There are no technological innovation requirements, but iDEC requires complete directed evolution circles
+            and a superior directed evolution output.</p>
+        </div>
+      </div>
+
+      <div class="row my-4">
+        <div class="col-lg-8 offset-lg-2 my-2">
+          <hr />
+        </div>
+      </div>
+
+      <div class="row my-4">
+        <div class="col-12 my-2 text-center">
+          <h2 id="track3">3. <i class="fas fa-dna"></i> Genome Directed Evolution</h2>
+        </div>
+        <div class="col-lg-8 offset-lg-2 mt-2">
+          <p>The last is kind of projects would relate to the umbrella term of ‘directed evolution of the genome’. The
+            works in this section may include development of novel strategies in the field of adaptive laboratory
+            evolution, new means in the introduction of programmed targeted or random changes on a genomic scale,
+            construction of effective selection screens for genomes and organisms with a desired trait. As opposed to
+            the ‘pathway directed evolution’, a defined set of specific genes would not be typically targeted unless it
+            would favor further planned changes in the genome of a given organism (e.g. SCRaMbLE tool for changes in the
+            yeast genome).</p>
+        </div>
+        <div class="col-lg-12 my-2 text-center">
+          <h4>Track IIIA: Genome Evolutionary Machines</h4>
+        </div>
+        <div class="col-lg-8 offset-lg-2 mt-2">
+          <p>Including projects dedicated to developing new technologies related to genome directed evolution.</p>
+          <p>There are no requirements for novel evolutionary output, but iDEC requires the original design of directed
+            evolution technology or existing technology optimization.</p>
+        </div>
+        <div class="col-lg-12 my-2 text-center">
+          <h4>Track IIIB: Genome Evolutionary Outcomes</h4>
+        </div>
+        <div class="col-lg-8 offset-lg-2 mt-2">
+          <p>Including projects dedicated to applying directed evolution technology to valuable target chassis. The goal
+            of the project should be obtaining directed evolutionary output with scientific or industrial value.</p>
+          <p>There are no technological innovation requirements, but iDEC requires complete directed evolution circles
+            and a superior directed evolution output.</p>
+        </div>
+      </div>
+
+      <div class="row my-4">
+        <div class="col-lg-8 offset-lg-2 my-2">
+          <hr />
+        </div>
+      </div>
+
+      <div class="row my-4">
+        <div class="col-12 my-2 text-center">
+          <h2 id="track_challenge">4. <i class="fas fa-rocket"></i> Track Plus: Challenge</h2>
+        </div>
+        <div class="col-lg-8 offset-lg-2 mt-2">
+          <p>For this track, the Scientific Advisory Group and the Industry Advisory Group will propose a challenge.
+            Participating teams can employ different platforms to conduct directed evolution research on designated
+            scientific or industrial goals. The challenging advisory groups will evaluate the results according to the
+            corresponding standards set by them.</p>
+        </div>
+      </div>
+
+      <div class="row my-4">
+        <div class="col-12">
+          <hr style="border-color:#2a206a; border-width: 3px;" />
+        </div>
+      </div>
+
+      <div class="row my-4">
+        <div class="col-lg-12 text-center">
+          <h1>Award</h1>
+        </div>
+      </div>
+
+      <div class="row my-2">
+        <div class="col-12 text-center">
+          <p>Judges Handbook: Coming soon</p>
+        </div>
+      </div>
+
+      <div class="row my-4">
+        <div class="col-lg-8 offset-lg-2 mt-2">
+          <p>Teams can compete for the following awards:</p>
+          <ol class="text-list">
+            <li><a class="general-hyperlink" href="#general_awards"><i class="fas fa-award"></i> General
+                Awards</a></li>
+            <li><a class="general-hyperlink" href="#track_awards"><i class="fas fa-trophy"></i> Track
+                Awards</a></li>
+            <li><a class="general-hyperlink" href="#single_awards"><i class="fas fa-thumbs-up"></i>
+                Single Awards</a></li>
+            <li><a class="general-hyperlink" href="#special_awards"><i class="far fa-star"></i> Special
+                Awards</a></li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="row my-4">
+        <div class="col-lg-8 offset-lg-2 my-2">
+          <hr />
+        </div>
+      </div>
+
+      <div class="row my-4">
+        <div class="col-12 my-2 text-center">
+          <h2 id="general_awards">1. <i class="fas fa-award"></i> General Awards</h2>
+        </div>
+        <div class="col-lg-8 offset-lg-2 mt-2">
+          <p>The general awards are mainly to encourage the participating teams to participate in all aspects of iDEC
+            fully. Actively completing all aspects of iDEC will result in higher scores.</p>
+          <p><strong>Gold Award (For Track I to III) </strong></p>
+          <p>The team that ranks in the top 10% of the total score will receive a Gold award.</p>
+          <p><strong>Silver Award (For Track I to III)</strong></p>
+          <p>The team that ranks in the top 20%-10% of the total score will receive a Silver award.</p>
+          <p><strong>Bronze Award (For Track I to III) </strong></p>
+          <p>The team that ranks in the top 40%-20% of the total score will receive a Bronze award.</p>
+          <p><strong>Scientific Contribution Award (For Track I to III)</strong></p>
+          <p>For all the other qualified teams. The essential qualification condition is that the four display items are
+            complete and conform to academic standards.</p>
+        </div>
+      </div>
+
+      <div class="row my-4">
+        <div class="col-lg-8 offset-lg-2 my-2">
+          <hr />
+        </div>
+      </div>
+
+      <div class="row my-4">
+        <div class="col-12 my-2 text-center">
+          <h2 id="track_awards">2. <i class="fas fa-trophy"></i> Track Awards</h2>
+        </div>
+        <div class="col-12 my-2 text-center">
+          <h4 class="text-center">(1) Best New Evolutionary Machine</h4>
+          <h4 class="text-center">(3 teams for 3 tracks)</h4>
+        </div>
+        <div class="col-lg-8 offset-lg-2 mt-2">
+          <p>The professional judges will nominate the candidates for this award and select the final winners after
+            discussion and voting. The definition of this award is to reward innovative, proven, and feasible directed
+            evolution technology. </p>
+          <p>The nomination criteria are: </p>
+          <ol class="text-list">
+            <li>The technology proposed by the project must be an original technology or an
+              optimized design based on existing technology.</li>
+            <li>The technology must be proved feasible and superior to the current technology by
+              experimental data in a real directed evolution case.</li>
+            <li>
+              If more than half of the judges believe that a project cannot meet the above standards, the project cannot
+              be nominated.
+            </li>
+          </ol>
+        </div>
+        <div class="col-12 mt-3 mb-2 text-center">
+          <h4>(2) Best Evolutionary Outcome&nbsp;</h4>
+          <h4>(3 teams for 3 tracks)</h4>
+        </div>
+        <div class="col-lg-8 offset-lg-2 mt-2">
+          <p>The professional judges will nominate the candidates for this award and select the final winners after
+            discussion and voting. </p>
+          <p>The definition of this award is to reward the best-directed evolution achievement.</p>
+          <p>The nomination conditions are: </p>
+          <ol class="text-list">
+            <li>The goal of directed evolution must reflect novelty, but the target molecule can be
+              the product of previous directed evolution works.</li>
+            <li>The result of evolution provides unprecedented mutants, and their performance is
+              better than any known version.</li>
+            <li>The output has broad scientific significance or has high application value in
+              industry.</li>
+          </ol>
+          <p>The judges will consider the above conditions together to vote on the nominated project, and the team with
+            the most votes wins.</p>
+        </div>
+      </div>
+
+      <div class="row my-4">
+        <div class="col-lg-8 offset-lg-2 my-2">
+          <hr />
+        </div>
+      </div>
+
+      <div class="row my-4">
+        <div class="col-lg-12 my-2 text-center">
+          <h2 id="single_awards">3. <i class="fas fa-thumbs-up"></i> Single Awards</h2>
+        </div>
+        <div class="col-lg-8 offset-lg-2 mt-2">
+          <p><strong>(1) Best Hardware</strong></p>
+          <p>To reward the most original hardware design. The hardware should improve the convenience of directed
+            evolution through innovative design, including improving efficiency, simplifying operations, reducing costs,
+            etc. </p>
+          <p><strong>(2) Best Software</strong></p>
+          <p>To reward the most original software design. The software should improve the convenience of directed
+            evolution through innovative design, including improving efficiency, simplifying operations, reducing costs,
+            etc. </p>
+          <p><strong>(3) Best Algorithm</strong></p>
+          <p>To reward the most original algorithm, which has universal significance for improving the predictability of
+            directed evolution. </p>
+          <p><strong>(4) Best target molecule </strong></p>
+          <p>To reward the most exciting target molecule selection. </p>
+          <p><strong>(5) The most potential tool </strong></p>
+          <p>To reward the most novel directed evolution tool, which is currently proved to have no advantages but has
+            the potential to be further optimized. </p>
+          <p><strong>(6) Best community building (Executive Committee Award) </strong></p>
+          <p>To reward the team that has made the most significant contributions to the iDEC community building.</p>
+          <p><strong>(7) Best Presentation </strong></p>
+          <p>To reward for presentation with precise logic, attractive and impressive content.</p>
+          <p><strong>(8) Best Wiki</strong></p>
+          <p>The iDEC wiki will focus on introducing science to the public. This award rewards the most creative
+            scientific promotion content.</p>
+          <p><strong>(9) Funniest Evolution </strong></p>
+          <p>To reward the funniest research topic. </p>
+          <p><strong>(10) Industry advisory group award</strong></p>
+          <p>To reward the project with the most industrial application value.</p>
+        </div>
+      </div>
+
+      <div class="row my-4">
+        <div class="col-lg-8 offset-lg-2 my-2">
+          <hr />
+        </div>
+      </div>
+
+      <div class="row my-4">
+        <div class="col-12 my-2 text-center">
+          <h2 id="special_awards">4. <i class="far fa-star"></i> Special Awards</h2>
+        </div>
+        <div class="col-lg-8 offset-lg-2 mt-2">
+          <p>Besides the above awards,iDEC also offers special awards. Special awards will be given to teams that make
+            outstanding accomplishments in a particular field.</p>
+          <p style="color: red;">Each special award can be given to more than one team in iDEC.</p>
+        </div>
+        <div class="col-lg-8 offset-lg-2 mt-2">
+          <p><strong>Mysterious Award 1</strong></p>
+          <p>A reporter system is commonly used in biology research to quantify biological activity, especially in
+            genetic engineering. Designing and choosing an appropriate reporter system can facilitate the screening and
+            identification process in directed evolution. Inspired by the 2008 Nobel prize in chemistry, iDEC presents
+            an award to teams who develop or optimize a reporter system and use it in their iDEC projects.</p>
+          <p><strong>Mysterious Award 2</strong></p>
+          <p>The discovery of Taq polymerase from <i>Thermus aquaticus</i> brought a revolutionary method to the field
+            of molecular biology. In directed evolution, error-prone PCR is typical to create mutations in target genes
+            for constructing the library, which shows the importance of diversification tools. Thus, iDEC presents an
+            award to teams that optimize or establish novel methods for genetic diversification in their research.</p>
+          <p><strong>Mysterious Award 3</strong></p>
+          <p>Screening and selecting the mutants with desired phenotypes from the mutated library is crucial in directed
+            evolution. Thus, iDEC presents an award to teams who establish or optimize screening assays in their
+            projects.</p>
+        </div>
+      </div>
+
+  </section>
+
+  <footer class="py-5 card-footer text-center">
+    <div class="container text-white">
+      <div class="col-lg-8 offset-lg-2">
+      <p>The first iDEC will be held at the University of Edinburgh, which is to commemorate the adventurous
+        voyage of Charles Darwin, an outstanding alumnus of this alma mater.</p>
+      <div class="mx-auto text-center">
+        <a href="https://www.facebook.com/InternationalDirectedEvolutionCompetition" class="icon-button facebook"><i
+            class="fa fa-facebook"></i><span></span></a>
+        <a href="https://www.instagram.com/idechq/" class="icon-button instagram"><i
+            class="fa fa-instagram"></i><span></span></a>
+        <a href="https://twitter.com/iDEC2021" class="icon-button twitter"><i
+            class="fa fa-twitter"></i><span></span></a>
+        <a href="https://www.linkedin.com/company/international-directed-evolution-competition%EF%BC%88idec%EF%BC%89/"
+          class="icon-button linkedin"><i class="fa fa-linkedin"></i><span></span></a>
+        <a href="https://www.youtube.com/channel/UC_qBQm9YArg8rK4oWO63_gQ" class="icon-button youtube"><i
+            class="fa fa-youtube"></i><span></span></a>
+        <a href="https://github.com/idechq" class="icon-button github"><i class="fa fa-github"></i><span></span></a>
+      </div>
+      <p class="text-white-50"> The International Directed Evolution Competition (iDEC) is a Scottish Charitable
+        Incorporate Organisation (SCIO), registered in Scotland, with charity number：SC050826</p>
+      <p class="text-white-50">Copyright &copy;2021 iDEC. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="../js/jquery-3.4.1.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="../js/popper.min.js"></script>
+  <script src="../js/bootstrap-4.4.1.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/2a0c96cd0e.js" crossorigin="anonymous"></script>
+
+</body>
+</html>

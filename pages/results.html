@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>iDEC - International Directed Evolution Competition</title>
+
+  <!-- Bootstrap -->
+  <link href="../css/bootstrap-4.4.1.css" rel="stylesheet">
+
+  <!-- iDEC CSS stylesheet -->
+  <link rel="stylesheet" href="../css/style.css">
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="57x57" href="../img/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="../img/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="../img/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="../img/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="../img/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="../img/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="../img/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="../img/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="../img/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="../img/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="../img/favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="../img/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="../index.html"><img src="../img/logo.png" alt="idec-logo" style="width:40px;"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span
+        class="navbar-toggler-icon"></span> </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active"> <a class="nav-link" href="../index.html" style="color: #2a206a;">Home <span
+              class="sr-only">(current)</span></a> </li>
+        <li class="nav-item"> <a class="nav-link" href="news.html" style="color: #2a206a;">News and
+            Announcements</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false" style="color: #4B0082;">
+            Registration </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="details_for_registration.html" style="color: #2a206a;">Details
+              you need</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="https://reg.idec.io" style="color: #2a206a;">Register for iDEC
+              2021</a>
+          </div>
+        </li>
+        <li class="nav-item"> <a class="nav-link" href="about_us.html" style="color: #2a206a;">About us</a>
+        </li>
+        <li class="nav-item"> <a class="nav-link" href="calendar.html" style="color: #2a206a;">iDEC calendar</a>
+        </li>
+        <li class="nav-item"> <a class="nav-link" href="results.html" style="color: #2a206a;">Results</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="https://wiki.idec.io/resources/introduction" target="_blank"
+            style="color: #2a206a;">Resources</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="https://arxiv.idec.io/" target="_blank"
+            style="color: #2a206a;">idecRχiv</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="tracks_and_awards.html" style="color: #2a206a;">Tracks
+            and
+            awards</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="requirements.html" style="color: #2a206a;">Requirements</a>
+        </li>
+        <li class="nav-item"> <a class="nav-link" href="ethics_biosafety_and_biosecurity.html"
+            style="color: #2a206a;">Ethics, Biosafety and Biosecurity</a> </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0 d-none">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+
+  <section>
+
+    <div class="modal fade" id="teamInfoModal" tabindex="-1" aria-labelledby="teamInfoModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="container text-center">
+              <h3 class="modal-title" id="teamInfoModalLabel">Team name</h3>
+              <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button> -->
+            </div>
+          </div>
+          <div class="modal-body text-center">
+            <p style="font-size: 1.2em;"><a class="general-hyperlink" id="teamWikiLink" href="#" target="_blank">Team Wiki</a></p>
+            <p style="font-size: 1.2em;"><a class="general-hyperlink" id="teamReportLink" href="#" target="_blank">Team Report</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row mt-4">
+        <div class="col-lg-12 text-center">
+          <h1>iDEC 2022 Results</h1>
+        </div>
+      </div>
+
+      <div class="row mb-2 text-center">
+        <div class="col-lg-10 offset-lg-1 mt-2 text-center prize-content">
+          <h3><span>&nbsp;<i class="fas fa-industry"></i>&nbsp; Industry Group Award &nbsp;<i class="fas fa-industry"></i>&nbsp;</span></h3>
+            <div>
+              <div class="col-lg-12 my-5 text-center">
+                <p>Industry Advisory Group Nominees &amp; <span class="winner">Winner</span></p>
+                <p><span class="winner"><a class="team-name" data-toggle="modal" data-target="#teamInfoModal" onclick="updateTeamInfoModal(this.id)" id="Team_GEnoM_-_iGEM_IIT_MADRAS">GEnoM - iGEM IIT Madras</a></span> &nbsp;&nbsp;&nbsp; <span class="winner"><a class="team-name" data-toggle="modal" data-target="#teamInfoModal" onclick="updateTeamInfoModal(this.id)" id="NAU-CHINA-DE">NAU-CHINA-DE</a></span> &nbsp;&nbsp;&nbsp; <span class="winner"><a class="team-name" data-toggle="modal" data-target="#teamInfoModal" onclick="updateTeamInfoModal(this.id)" id="NEFU_China">NEFU_China</a></span> &nbsp;&nbsp;&nbsp; <span class="winner"><a class="team-name" data-toggle="modal" data-target="#teamInfoModal" onclick="updateTeamInfoModal(this.id)" id="OUC_China">OUC_China</a></span></p>
+              </div>
+            </div>
+        </div>
+      </div>
+
+      <div class="row mb-2 text-center">
+        <div class="col-lg-10 offset-lg-1 mt-2 text-center prize-content">
+          <h3><span>&nbsp; <i class="fas fa-star"></i> &nbsp; Special Awards &nbsp; <i class="fas fa-star"></i> &nbsp;</span></h3>
+            <div>
+              <div class="col-lg-12 my-5 text-center">
+                <p>Bluepha Reporter System Award Nominees &amp; <span class="winner">Winner</span></p>
+                <p><span class="winner"><a class="team-name" data-toggle="modal" data-target="#teamInfoModal" onclick="updateTeamInfoModal(this.id)" id="NEFU_China">NEFU_China</a></span> &nbsp;&nbsp;&nbsp; <a class="team-name" data-toggle="modal" data-target="#teamInfoModal" onclick="updateTeamInfoModal(this.id)" id="USTC">USTC</a></p>
+                <br>
+                <p>Bluepha Library Construction Award Nominees &amp; <span class="winner">Winner</span></p>
+                <p><span class="winner"><a class="team-name" data-toggle="modal" data-target="#teamInfoModal" onclick="updateTeamInfoModal(this.id)" id="HUST-China">HUST-China</a></span></p>
+                <br>
+                <p>Bluepha Screening Assay Award Nominees &amp; <span class="winner">Winner</span></p>
+                <p><span class="winner"><a class="team-name" data-toggle="modal" data-target="#teamInfoModal" onclick="updateTeamInfoModal(this.id)" id="NAU-CHINA-DE">NAU-CHINA-DE</a></span> &nbsp;&nbsp;&nbsp; <a class="team-name" data-toggle="modal" data-target="#teamInfoModal" onclick="updateTeamInfoModal(this.id)" id="NEFU_China">NEFU_China</a> &nbsp;&nbsp;&nbsp; <a class="team-name" data-toggle="modal" data-target="#teamInfoModal" onclick="updateTeamInfoModal(this.id)" id="SUSTech_Shenzhen">SUSTech_Shenzhen_2022</a></p>
+              </div>
+            </div>
+        </div>
+      </div>
+
+      <div class="row mb-2 text-center">
+        <div class="col-lg-10 offset-lg-1 mt-2 text-center prize-content">
+          <h3><span>&nbsp;<i class="fas fa-thumbs-up"></i>&nbsp; Single Awards &nbsp;<i class="fas fa-thumbs-up"></i>&nbsp;</span></h3>
+            <div>
+              <div class="col-lg-12 my-5 text-center">
+                <p>Best Software <span class="winner">Winner</span></p>
+                <p><span class="winner"><a class="team-name" data-toggle="modal" data-target="#teamInfoModal" onclick="updateTeamInfoModal(this.id)" id="VE_CPU">VE-CPU</a></span></p>
+                <br>
+                <p>Best Algorithm <span class="winner">Winner</span></p>
+                <p><a class="team-name" data-toggle="modal" data-target="#teamInfoModal" onclick="updateTeamInfoModal(this.id)" id="HUST-China">HUST-China</a><span class="winner"><a class="team-name" data-toggle="modal" data-target="#teamInfoModal" onclick="updateTeamInfoModal(this.id)" id="VE_CPU">VE-CPU</a></span></p>
+                <br>
+                <p>Best Target Molecule Nominees &amp; <span class="winner">Winner</span></p>
+                <p><a class="team-name" data-toggle="modal" data-target="#teamInfoModal" onclick="updateTeamInfoModal(this.id)" id="Edinburgh-UHAS_Ghana">Edinburgh-UHAS_Ghana</a> &nbsp;&nbsp;&nbsp; <a class="team-name" data-toggle="modal" data-target="#teamInfoModal" onclick="updateTeamInfoModal(this.id)" id="OUC_China">OUC_China</a> &nbsp;&nbsp;&nbsp; <a class="team-name" data-toggle="modal" data-target="#teamInfoModal" onclick="updateTeamInfoModal(this.id)" id="OUC-Marine_Drugs">OUC-Marine Drugs</a> &nbsp;&nbsp;&nbsp; <a class="team-name" data-toggle="modal" data-target="#teamInfoModal" onclick="updateTeamInfoModal(this.id)" id="SUSTech_Shenzhen">SUSTech_Shenzhen_2022</a> &nbsp;&nbsp;&nbsp; <span class="winner"><a class="team-name" data-toggle="modal" data-target="#teamInfoModal" onclick="updateTeamInfoModal(this.id)" id="USTC">USTC</a></span></p>
+                <br>
+                <p>The Most Potential Tool Nominees &amp; <span class="winner">Winner</span></p>
+                <p><a class="team-name" data-toggle="modal" data-target="#teamInfoModal" onclick="updateTeamInfoModal(this.id)" id="SUSTech_Shenzhen">SUSTech_Shenzhen_2022</a> &nbsp;&nbsp;&nbsp; <span class="winner"><a class="team-name" data-toggle="modal" data-target="#teamInfoModal" onclick="updateTeamInfoModal(this.id)" id="VE_CPU">VE-CPU</a></span></p>
+                <br>
+                <p>Funniest Evolution &amp; <span class="winner">Winner</span></p>
+                <p><a class="team-name" data-toggle="modal" data-target="#teamInfoModal" onclick="updateTeamInfoModal(this.id)" id="CSU_CHINA">CSU_CHINA2022</a> &nbsp;&nbsp;&nbsp; <a class="team-name" data-toggle="modal" data-target="#teamInfoModal" onclick="updateTeamInfoModal(this.id)" id="Edinburgh-UHAS_Ghana">Edinburgh-UHAS_Ghana</a> &nbsp;&nbsp;&nbsp; <a class="team-name" data-toggle="modal" data-target="#teamInfoModal" onclick="updateTeamInfoModal(this.id)" id="Team_GEnoM_-_iGEM_IIT_MADRAS">Team GEnoM - iGEM IIT MADRAS</a> &nbsp;&nbsp;&nbsp; <a class="team-name" data-toggle="modal" data-target="#teamInfoModal" onclick="updateTeamInfoModal(this.id)" id="OriGeneNation">OriGeneNation</a> &nbsp;&nbsp;&nbsp; <span class="winner"><a class="team-name" data-toggle="modal" data-target="#teamInfoModal" onclick="updateTeamInfoModal(this.id)" id="SUSTech_Shenzhen">SUSTech_Shenzhen_2022</a></span> &nbsp;&nbsp;&nbsp; <span class="winner"><a class="team-name" data-toggle="modal" data-target="#teamInfoModal" onclick="updateTeamInfoModal(this.id)" id="Tongji_China">Tongji_China</a></span></p>
+                <br>
+                <p>Best Community Building <span class="winner">Winners</span></p>
+                <p><span class="winner"><a class="team-name" data-toggle="modal" data-target="#teamInfoModal" onclick="updateTeamInfoModal(this.id)" id="Edinburgh-UHAS_Ghana">Edinburgh-UHAS_Ghana</a></span> &nbsp;&nbsp;&nbsp; <a class="team-name" data-toggle="modal" data-target="#teamInfoModal" onclick="updateTeamInfoModal(this.id)" id="NAU-CHINA-DE">NAU-CHINA-DE</a> &nbsp;&nbsp;&nbsp; <span class="winner"><a class="team-name" data-toggle="modal" data-target="#teamInfoModal" onclick="updateTeamInfoModal(this.id)" id="NEFU_China">NEFU_China</a></span> &nbsp;&nbsp;&nbsp; <a class="team-name" data-toggle="modal" data-target="#teamInfoModal" onclick="updateTeamInfoModal(this.id)" id="OriGeneNation">OriGeneNation</a> &nbsp;&nbsp;&nbsp; <span class="winner"><a class="team-name" data-toggle="modal" data-target="#teamInfoModal" onclick="updateTeamInfoModal(this.id)" id="OUC-Marine_Drugs">OUC-Marine Drugs</a></span></p>
+                <br>
+                <p>Best Presentation Nominees &amp; <span class="winner">Winner</span></p>
+                <p><span class="winner"><a class="team-name" data-toggle="modal" data-target="#teamInfoModal" onclick="updateTeamInfoModal(this.id)" id="Edinburgh-UHAS_Ghana">Edinburgh-UHAS_Ghana</a></span> &nbsp;&nbsp;&nbsp; <span class="winner"><a class="team-name" data-toggle="modal" data-target="#teamInfoModal" onclick="updateTeamInfoModal(this.id)" id="NAU-CHINA-DE">NAU-CHINA-DE</a></span> &nbsp;&nbsp;&nbsp; <span class="winner"><a class="team-name" data-toggle="modal" data-target="#teamInfoModal" onclick="updateTeamInfoModal(this.id)" id="NEFU_China">NEFU_China</a></span> &nbsp;&nbsp;&nbsp; <a class="team-name" data-toggle="modal" data-target="#teamInfoModal" onclick="updateTeamInfoModal(this.id)" id="VE_CPU">VE-CPU</a></p>
+                <br>
+                <p>Best Wiki <span class="winner">Winners</span></p>
+                <p><a class="team-name" data-toggle="modal" data-target="#teamInfoModal" onclick="updateTeamInfoModal(this.id)" id="NAU-CHINA-DE">NAU-CHINA-DE</a> &nbsp;&nbsp;&nbsp; <span class="winner"><a class="team-name" data-toggle="modal" data-target="#teamInfoModal" onclick="updateTeamInfoModal(this.id)" id="NEFU_China">NEFU_China</a></span> &nbsp;&nbsp;&nbsp; <a class="team-name" data-toggle="modal" data-target="#teamInfoModal" onclick="updateTeamInfoModal(this.id)" id="OUC-Marine_Drugs">OUC-Marine Drugs</a> &nbsp;&nbsp;&nbsp; <a class="team-name" data-toggle="modal" data-target="#teamInfoModal" onclick="updateTeamInfoModal(this.id)" id="SUSTech_Shenzhen">SUSTech_Shenzhen_2022</a> &nbsp;&nbsp;&nbsp; <a class="team-name" data-toggle="modal" data-target="#teamInfoModal" onclick="updateTeamInfoModal(this.id)" id="Tongji_China">Tongji_China</a> &nbsp;&nbsp;&nbsp; <a class="team-name" data-toggle="modal" data-target="#teamInfoModal" onclick="updateTeamInfoModal(this.id)" id="USTC">USTC</a></p>
+              </div>
+            </div>
+        </div>
+      </div>
+
+      <div class="row mb-2 text-center">
+        <div class="col-lg-10 offset-lg-1 mt-2 text-center prize-content">
+          <h3><span>&nbsp;<i class="fas fa-trophy"></i>&nbsp; Track Awards &nbsp;<i class="fas fa-trophy"></i> &nbsp;</span></h3>
+            <div>
+              <div class="col-lg-12 my-5 text-center">
+                <p>Best New Molecular Evolutionary Machine Nominees &amp; <span class="winner">Winner</span></p>
+                <p><a class="team-name" data-toggle="modal" data-target="#teamInfoModal" onclick="updateTeamInfoModal(this.id)" id="Edinburgh-UHAS_Ghana">Edinburgh-UHAS_Ghana</a> &nbsp;&nbsp;&nbsp; <a class="team-name" data-toggle="modal" data-target="#teamInfoModal" onclick="updateTeamInfoModal(this.id)" id="NAU-CHINA-DE">NAU-CHINA-DE</a> &nbsp;&nbsp;&nbsp; <span class="winner"><a class="team-name" data-toggle="modal" data-target="#teamInfoModal" onclick="updateTeamInfoModal(this.id)" id="NEFU_China">NEFU_China</a></span></p>
+                <br>
+                <p>Best Molecular Evolutionary Outcomes &amp; <span class="winner">Winner</span></p>
+                <p><a class="team-name" data-toggle="modal" data-target="#teamInfoModal" onclick="updateTeamInfoModal(this.id)" id="CPU_CHINA">CPU_CHINA</a> &nbsp;&nbsp;&nbsp; <a class="team-name" data-toggle="modal" data-target="#teamInfoModal" onclick="updateTeamInfoModal(this.id)" id="Edinburgh-UHAS_Ghana">Edinburgh-UHAS_Ghana</a> &nbsp;&nbsp;&nbsp; <a class="team-name" data-toggle="modal" data-target="#teamInfoModal" onclick="updateTeamInfoModal(this.id)" id="NAU-CHINA-DE">NAU-CHINA-DE</a> &nbsp;&nbsp;&nbsp; <span class="winner"><a class="team-name" data-toggle="modal" data-target="#teamInfoModal" onclick="updateTeamInfoModal(this.id)" id="NEFU_China">NEFU_China</a></span> &nbsp;&nbsp;&nbsp; <span class="winner"><a class="team-name" data-toggle="modal" data-target="#teamInfoModal" onclick="updateTeamInfoModal(this.id)" id="NEFU_China">NEFU_China</a></span></p>
+                <br>
+                <p>Best Pathway Evolutionary Machines <span class="winner">Winner</span></p>
+                <p><span class="winner"><a class="team-name" data-toggle="modal" data-target="#teamInfoModal" onclick="updateTeamInfoModal(this.id)" id="VE_CPU">VE-CPU</a></span></p>
+                <br>
+                <p>Best Pathway Evolutionary Outcomes <span class="winner">Winner</span></p>
+                <p><span class="winner"><a class="team-name" data-toggle="modal" data-target="#teamInfoModal" onclick="updateTeamInfoModal(this.id)" id="SUSTech_Shenzhen">SUSTech_Shenzhen_2022</a></span> &nbsp;&nbsp;&nbsp; <a class="team-name" data-toggle="modal" data-target="#teamInfoModal" onclick="updateTeamInfoModal(this.id)" id="USTC">USTC</a></p>
+                <br>
+                <p>Best Genome Evolutionary Outcomes<span class="winner">Winner</span></p>
+                <p><span class="winner"><a class="team-name" data-toggle="modal" data-target="#teamInfoModal" onclick="updateTeamInfoModal(this.id)" id="LZU-CHINA">LZU-CHINA</a></span> &nbsp;&nbsp;&nbsp; <a class="team-name" data-toggle="modal" data-target="#teamInfoModal" onclick="updateTeamInfoModal(this.id)" id="NEFU_China">NEFU_China</a></p> 
+              </div>
+            </div>
+        </div>
+      </div>
+
+      <div class="row mb-5 text-center">
+        <div class="col-lg-10 offset-lg-1 mt-2 text-center prize-content">
+          <h3><span> &nbsp;<i class="fas fa-award"></i>&nbsp; General Awards &nbsp; <i class="fas fa-award"></i> &nbsp;</span></h3>
+            <div>
+              <div class="col-lg-12 my-5 text-center">
+                <p>Scientific Contribution Awards</p>
+                <p><span class="winner"><a class="team-name" data-toggle="modal" data-target="#teamInfoModal" onclick="updateTeamInfoModal(this.id)" id="CPU_CHINA">CPU_CHINA</a> &nbsp;&nbsp;&nbsp; <span class="winner"><a class="team-name" data-toggle="modal" data-target="#teamInfoModal" onclick="updateTeamInfoModal(this.id)" id="CSU_CHINA">CSU_CHINA2022</a></span> &nbsp;&nbsp;&nbsp; <span class="winner"><a class="team-name" data-toggle="modal" data-target="#teamInfoModal" onclick="updateTeamInfoModal(this.id)" id="Team_GEnoM_-_iGEM_IIT_MADRAS">GEnoM - iGEM IIT Madras/a></span> &nbsp;&nbsp;&nbsp; <span class="winner"><a class="team-name" data-toggle="modal" data-target="#teamInfoModal" onclick="updateTeamInfoModal(this.id)" id="HUST-China">HUST-China</a></span> &nbsp;&nbsp;&nbsp; <span class="winner"><a class="team-name" data-toggle="modal" data-target="#teamInfoModal" onclick="updateTeamInfoModal(this.id)" id="LZU-CHINA">LZU-CHINA</a></span> &nbsp;&nbsp;&nbsp; <span class="winner"><a class="team-name" data-toggle="modal" data-target="#teamInfoModal" onclick="updateTeamInfoModal(this.id)" id="OriGeneNation">OriGeneNation</a></span> &nbsp;&nbsp;&nbsp; <span class="winner"><a class="team-name" data-toggle="modal" data-target="#teamInfoModal" onclick="updateTeamInfoModal(this.id)" id="OUC_China">OUC_China</a></span> &nbsp;&nbsp;&nbsp; <span class="winner"><a class="team-name" data-toggle="modal" data-target="#teamInfoModal" onclick="updateTeamInfoModal(this.id)" id="Tongji_China">Tongji_China</a></span></p>
+                <br>
+                <p>Bronze Awards</p>
+                <p><span class="winner"><a class="team-name" data-toggle="modal" data-target="#teamInfoModal" onclick="updateTeamInfoModal(this.id)" id="SUSTech_Shenzhen">SUSTech_Shenzhen_2022</a></span> &nbsp;&nbsp;&nbsp; <span class="winner"><a class="team-name" data-toggle="modal" data-target="#teamInfoModal" onclick="updateTeamInfoModal(this.id)" id="USTC">USTC</a></span> &nbsp;&nbsp;&nbsp; <span class="winner"><a class="team-name" data-toggle="modal" data-target="#teamInfoModal" onclick="updateTeamInfoModal(this.id)" id="VE_CPU">VE-CPU</a></span></p>
+                <br>
+                <p>Silver Awards</p>
+                <p><span class="winner"><a class="team-name" data-toggle="modal" data-target="#teamInfoModal" onclick="updateTeamInfoModal(this.id)" id="NAU-CHINA-DE">NAU-CHINA-DE</a></span> &nbsp;&nbsp;&nbsp; <span class="winner"><a class="team-name" data-toggle="modal" data-target="#teamInfoModal" onclick="updateTeamInfoModal(this.id)" id="OUC-Marine_Drugs">OUC-Marine Drugs</a></span></p>
+                <br>
+                <p>Gold Award</p>
+                <p><span class="winner"><a class="team-name" data-toggle="modal" data-target="#teamInfoModal" onclick="updateTeamInfoModal(this.id)" id="Edinburgh-UHAS_Ghana">Edinburgh-UHAS_Ghana</a></span> &nbsp;&nbsp;&nbsp; <a class="team-name" data-toggle="modal" data-target="#teamInfoModal" onclick="updateTeamInfoModal(this.id)" id="NEFU_China">NEFU_China</a></span></p>
+              </div>
+            </div>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <footer class="py-5 card-footer text-center">
+    <div class="container text-white">
+      <div class="col-lg-8 offset-lg-2">
+        <p>The first iDEC will be held at the University of Edinburgh, which is to commemorate the adventurous
+          voyage of Charles Darwin, an outstanding alumnus of this alma mater.</p>
+        <div class="mx-auto text-center">
+          <a href="https://www.facebook.com/InternationalDirectedEvolutionCompetition" class="icon-button facebook"><i
+              class="fa fa-facebook"></i><span></span></a>
+          <a href="https://www.instagram.com/idechq/" class="icon-button instagram"><i
+              class="fa fa-instagram"></i><span></span></a>
+          <a href="https://twitter.com/iDEC2021" class="icon-button twitter"><i
+              class="fa fa-twitter"></i><span></span></a>
+          <a href="https://www.linkedin.com/company/international-directed-evolution-competition%EF%BC%88idec%EF%BC%89/"
+            class="icon-button linkedin"><i class="fa fa-linkedin"></i><span></span></a>
+          <a href="https://www.youtube.com/channel/UC_qBQm9YArg8rK4oWO63_gQ" class="icon-button youtube"><i
+              class="fa fa-youtube"></i><span></span></a>
+          <a href="https://github.com/idechq" class="icon-button github"><i class="fa fa-github"></i><span></span></a>
+        </div>
+        <p class="text-white-50"> The International Directed Evolution Competition (iDEC) is a Scottish
+          Charitable
+          Incorporate Organisation (SCIO), registered in Scotland, with charity number：SC050826</p>
+        <p class="text-white-50">Copyright &copy;2021 iDEC. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="../js/jquery-3.4.1.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="../js/popper.min.js"></script>
+  <script src="../js/bootstrap-4.4.1.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/2a0c96cd0e.js" crossorigin="anonymous"></script>
+  <script src="../js/showTeamInfo.js"></script>
+</body>
+
+</html>

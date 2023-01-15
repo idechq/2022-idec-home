@@ -1,0 +1,780 @@
+@charset "utf-8";
+/* CSS Document */
+
+:root {
+  --idec_primary_purple: #2a206a;
+  --idec_primary_green: #00ad66;
+  --idec_light_purple_1: #7a5fbc;
+  --idec_light_purple_2: #926aba;
+  --pseudo_white: #fff;
+}
+
+h1 {
+  color: #2a206a;
+  font-size: 400%;
+}
+@media (max-width: 768px) {
+  h1 {
+    font-size: 300%;
+  }
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 200%;
+  }
+}
+
+/* NAVIGATION BAR
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+nav div li .nav-link a {
+  color: #2a206a;
+  font-size: 100%;
+}
+
+/* MAIN THEME HYPERLINKS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.general-hyperlink {
+  color: var(--idec_light_purple_1);
+  font-weight: bold;
+}
+
+.general-hyperlink:hover {
+  color: var(--idec_light_purple_2);
+}
+
+/* ALL PURPOSE TEXT LIST STYLE
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.text-list {
+  list-style-position: outside;
+  margin: 0em;
+  padding-left: 1em;
+}
+ul.text-list li {
+  padding-left: 2em;
+  margin: 0 0 0.75em 0;
+}
+ol.text-list li {
+  padding-left: 1em;
+  margin: 0 0 0.75em 0;
+}
+ul.text-list li::marker {
+  content: "●";
+  color: purple;
+}
+.text-list li ul {
+  list-style-position: outside;
+  margin: 1em 0 1em 1em;
+}
+.text-list li ol {
+  list-style-position: outside;
+  margin: 1em 0 1em 1em;
+}
+.text-list li ul li {
+  padding-left: 2em;
+  margin: 0 0 0.5em 0;
+}
+.text-list li ul li::marker {
+  color: var(--idec_light_purple_1);
+}
+ol.text-list li ul li::marker {
+  content: "●";
+  color: purple;
+}
+
+/* JUMBOTRON (Home)
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.title-jumbo {
+  background-image: url("../img/hand.png"), url("../img/tree.png");
+  background-size: 600px, 1800px;
+  background-position: right, top;
+  background-repeat: no-repeat;
+  background-attachment: scroll, scroll;
+}
+
+.jumbo-quote {
+  background-color: rgba(233, 236, 239, 0.6);
+  border-radius: 2em;
+  padding-left: 0.2em;
+  padding-right: 0.5em;
+}
+
+@media (max-width: 1024px) {
+  .title-jumbo {
+    background-size: 500px, 1800px;
+  }
+}
+@media (max-width: 768px) {
+  .title-jumbo {
+    background-size: 300px, 1800px;
+  }
+}
+@media (max-width: 500px) {
+  .title-jumbo {
+    background-size: 250px, 1800px;
+  }
+}
+
+/* JUMBOTRON BUTTONS (Home)
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.btn-huge {
+  padding-top: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 10px;
+  border-radius: 50px;
+  font-size: 25px;
+  background-color: rgba(233, 236, 239, 0.7);
+}
+
+.btn-green {
+  color: var(--idec_primary_purple);
+  border-color: var(--idec_primary_green);
+}
+
+.btn-green:hover {
+  color: var(--pseudo_white);
+  background-color: var(--idec_primary_green);
+  border-color: var(--idec_primary_green);
+}
+
+.btn-divider {
+  width: 3em;
+  height: auto;
+  display: inline-block;
+}
+
+@media (max-width: 760px) {
+  .btn-divider {
+    width: 0em;
+  }
+  .btn-green {
+    margin-bottom: 1em;
+  }
+  .btn-huge {
+    font-size: 1.2em;
+  }
+}
+
+/* HYPERLINKS ON NEWS CARD (Home)
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.news-card-hyperlink {
+  color: var(--idec_primary_purple);
+}
+
+.news-card-hyperlink:hover {
+  color: var(--idec_light_purple_1);
+}
+
+/* VIDEO FRAME (Home)
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+}
+
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* WHO WE ARE BUTTON OVERLAY ON IMGS (Home)
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.parent {
+  position: inline;
+  top: 0;
+  left: 0;
+}
+.img-1 {
+  position: top;
+  top: 0;
+  left: 0;
+  size: contain;
+}
+.img-2 {
+  position: absolute;
+  top: 0px;
+  left: 20%;
+  max-width: 60%;
+}
+
+.parent .btn {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 11px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 25px;
+  border-width: medium;
+}
+
+/* TIMELINE (Home)
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.timeline {
+  white-space: nowrap;
+  overflow-x: hidden;
+}
+
+.timeline ol {
+  font-size: 0;
+  width: 100vw;
+  padding: 350px 0 20px 0;
+  transition: all 1s;
+}
+
+.timeline ol li {
+  position: relative;
+  display: inline-block;
+  list-style-type: none;
+  width: 370px;
+  height: 3px;
+  background: #43418f;
+}
+
+.timeline ol li:last-child {
+  width: 280px;
+}
+
+.timeline ol li:not(:first-child) {
+  margin-left: 14px;
+}
+
+.timeline ol li:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: calc(100% + 1px);
+  bottom: 0;
+  width: 12px;
+  height: 12px;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background: #1cc283; /* dot on timeline */
+}
+
+.timeline ol li div {
+  position: absolute;
+  left: calc(100px + 50px);
+  width: 280px;
+  padding: 15px;
+  font-size: 1rem;
+  white-space: normal;
+  color: black;
+  background: white; /* box background color */
+  border-style: solid;
+  border-color: #2a206a;
+  border-width: 0.2em;
+  border-radius: 40px;
+}
+
+.timeline ol li div::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.timeline ol li div {
+  top: -16px;
+  transform: translateY(-100%);
+}
+
+.timeline ol li div::before {
+  top: 100%;
+  border-width: 12px 0 0 16px;
+  transform: translateX(-310%);
+  border-color: #2a206a transparent transparent transparent; /* box corner color */
+}
+
+/*
+.timeline ol li:nth-child(even) div {
+  top: calc(100% + 16px);
+}
+*/
+
+/*
+.timeline ol li:nth-child(even) div::before {
+  top: -8px;
+  border-width: 8px 0 0 8px;
+  border-color: transparent transparent transparent white;
+}
+*/
+
+.timeline time {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.timeline-card {
+  height: 300px;
+}
+
+/* TIMELINE ARROWS (Home)
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.arrows button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.timeline .arrows {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.timeline .arrows .arrow__prev {
+  margin-right: 20px;
+}
+
+.timeline .disabled {
+  opacity: 0.5;
+}
+
+.timeline .arrows img {
+  width: 45px;
+  height: 45px;
+}
+
+/* TIMELINE GENERAL MEDIA QUERIES (Home)
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@media screen and (max-width: 750px) {
+  .timeline ol,
+  .timeline ol li {
+    width: auto;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .timeline ol div {
+    /* this is the part which renders mobile phone display problem before*/
+    padding: 0;
+    transform: none !important;
+  }
+
+  .timeline ol li {
+    display: block;
+    height: auto;
+    background: transparent;
+  }
+
+  .timeline ol li:first-child {
+    margin-top: 25px;
+  }
+
+  .timeline ol li:not(:first-child) {
+    margin-left: auto;
+  }
+
+  .timeline ol li div {
+    width: 94%;
+    height: auto !important;
+    margin: 0 auto 25px;
+  }
+
+  .timeline ol li div {
+    position: static;
+  }
+
+  .timeline ol li:nth-child(odd) div {
+    transform: none;
+  }
+
+  .timeline ol li:nth-child(odd) div::before,
+  .timeline ol li:nth-child(even) div::before {
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50%);
+    border: none;
+    border-left: 1px solid white;
+    height: 25px;
+  }
+
+  .timeline ol li:last-child,
+  .timeline ol li:nth-last-child(2) div::before,
+  .timeline ol li:not(:last-child)::after,
+  .timeline .arrows {
+    display: none;
+  }
+}
+
+/* SPONSOR LOGOS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.spons-logo-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.spons-logo {
+  margin: 0 20px 20px 20px;
+}
+
+/* FOOTER DIV
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.card-footer {
+  background-image: url("../img/bluephoto.png");
+  background-position: relative;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+.card-footer img {
+  left: 0;
+  bottom: 0;
+}
+
+/* FOOTER FEEDBACK FORM
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.jumbo-form {
+  background: rgba(213, 207, 255, 0.4);
+  padding: 2em;
+}
+
+.form-control {
+  background: rgba(213, 207, 255, 0.8);
+}
+
+/* FOOTER SOCIAL MEDIA ICONS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* Wrapper */
+.icon-button {
+  background-color: white;
+  border-radius: 2.6rem;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.3rem;
+  height: 2.6rem;
+  line-height: 2.6rem;
+  margin: 0 5px;
+  position: relative;
+  text-align: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 2.6rem;
+}
+
+/* Circle */
+.icon-button span {
+  border-radius: 0;
+  display: block;
+  height: 0;
+  left: 50%;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  width: 0;
+}
+.icon-button:hover span {
+  width: 2.6rem;
+  height: 2.6rem;
+  border-radius: 2.6rem;
+  margin: -1.3rem;
+}
+
+/* Icons */
+.icon-button i {
+  background: none;
+  color: white;
+  height: 2.6rem;
+  left: 0;
+  line-height: 2.6rem;
+  position: absolute;
+  top: 0;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  width: 2.6rem;
+  z-index: 10;
+}
+.facebook span {
+  background-color: #3b5998;
+}
+.instagram span {
+  background-color: #e1306c;
+}
+.twitter span {
+  background-color: #4099ff;
+}
+.linkedin span {
+  background-color: #2867b2;
+}
+.github span {
+  background-color: #34526f;
+}
+.youtube span {
+  background-color: #bb0000;
+}
+.pinterest span {
+  background-color: #cb2027;
+}
+
+.icon-button .fa-twitter {
+  color: #4099ff;
+}
+.icon-button .fa-facebook {
+  color: #3b5998;
+}
+.icon-button .fa-github {
+  color: #34526f;
+}
+.icon-button .icon-google-plus {
+  color: #db5a3c;
+}
+.icon-button .fa-instagram {
+  color: #e1306c;
+}
+.icon-button .fa-youtube {
+  color: #bb0000;
+}
+.icon-button .fa-linkedin {
+  color: #2867b2;
+}
+
+.icon-button:hover .fa-twitter {
+  color: white;
+}
+.icon-button:hover .fa-facebook {
+  color: white;
+}
+.icon-button:hover .fa-linkedin {
+  color: white;
+}
+.icon-button:hover .fa-github {
+  color: white;
+}
+.icon-button:hover .fa-instagram {
+  color: white;
+}
+.icon-button:hover .fa-youtube,
+.icon-button:hover .fa-pinterest {
+  color: white;
+}
+
+@media all and (max-width: 680px) {
+  .icon-button {
+    border-radius: 1.6rem;
+    font-size: 0.8rem;
+    height: 1.6rem;
+    line-height: 1.6rem;
+    width: 1.6rem;
+  }
+
+  .icon-button:hover span {
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 1.6rem;
+    margin: -0.8rem;
+  }
+
+  /* Icons */
+  .icon-button i {
+    height: 1.6rem;
+    line-height: 1.6rem;
+    width: 1.6rem;
+  }
+  .pinterest {
+    display: none;
+  }
+}
+
+/* NEB ADVERTISEMENT BANNER (Home)
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.ad-banner {
+  padding: 10px 0 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ad-banner .ad-banner-text {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.ad-banner .info-btn {
+  height: auto;
+  width: auto;
+  padding: 0.2em 0.8em;
+  margin-left: 1em;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.neb-colors {
+  background-color: #808080;
+  color: #ffffff;
+}
+
+.neb-colors button.info-btn {
+  color: #ffffff;
+  background-color: #f2661b;
+}
+
+.ad-banner .dimiss-btn {
+  position: absolute;
+  right: 2em;
+}
+.ad-timer {
+  size: 0.1em;
+}
+
+@media only screen and (min-width: 768px) {
+  .responsive-br {
+    display: none;
+  }
+}
+
+@media (max-width: 860px) {
+  .responsive-nbsp {
+    display: none;
+  }
+  .ad-banner button.info-btn {
+    margin-top: 1em;
+  }
+}
+
+/* LIST STYLE FOR CALENDAR TABLE ITEMS (Calendar)
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.calendar-text-list {
+  list-style-position: outside;
+  margin: 0em;
+  padding-left: 1em;
+}
+.calendar-text-list li {
+  padding-left: 1em;
+  margin: 0 0 0.75em 0;
+}
+.calendar-text-list li::marker {
+  content: "●";
+  color: purple;
+}
+
+/* ALERT BOX (Details for Registration)
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.alert-1 {
+  /* Alert box on "Details for Registration" page */
+  padding: 20px;
+  background-color: #f44336; /* Red */
+  color: white;
+  margin-bottom: 15px;
+}
+
+/* VOLUNTEER CARD (About Us)
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.volunteer-card {
+  width: 12rem;
+}
+
+.volunteer-card span {
+  color: #2a206a;
+}
+
+.volunteer-card span.name {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.volunteer-card span.role {
+  font-size: 0.8rem;
+}
+
+.volunteer-card img {
+  /* about_us page headshots */
+  padding: 0.3rem;
+  background-color: #f8f9fa;
+  border: 3px solid #325475;
+  border-radius: 45rem;
+  max-width: 90%;
+  margin: 1rem;
+  margin-bottom: 0.2rem;
+}
+
+/* RESULTS BLOCKS (Results Page)
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.prize-content h3 {
+  position: relative;
+  top: 0.8em;
+  font-weight: bold ;
+}
+
+.prize-content h3 span {
+  background-color: white;
+}
+
+.prize-content span.winner {
+  color: var(--idec_primary_green);
+}
+
+.prize-content > div {
+  border: 4px dashed #2a206a;
+  border-radius: 4em;
+}
+
+.prize-content div div p {
+  color: #595959;
+  font-weight: bold;
+  font-size: 1.2em;
+  margin: 0 0 0 0;
+}
+
+.prize-content div div p .winner {
+  color: var(--idec_primary_green);
+}
+
+
+@media (max-width: 768px) {
+
+  h3 {
+    font-size: 100%;
+  }
+
+  .prize-content > div {
+  border: 2px dashed #2a206a;
+  border-radius: 4em;
+}
+
+  .prize-content h3 {
+  top: 1.2em;
+}
+.prize-content div div p {
+  font-size: 1em;
+  margin-bottom: 1em;
+}
+}
+
+/* BLOCKQUOTES (EBB Page)
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.blockquote-box {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  padding: 0.5em 10px;
+}
+
+/* Links for Team Names (Results Page)
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.team-name:hover {
+  text-decoration: underline !important;
+  cursor: pointer !important;
+}
