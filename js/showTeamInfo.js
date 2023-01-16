@@ -64,5 +64,5 @@ var teamInfo = {
 function updateTeamInfoModal(id) {
   document.querySelector('#teamInfoModalLabel').innerHTML = teamInfo[id].name;
   document.querySelector('#teamWikiLink').setAttribute('href', `https://idec-teams.github.io/2022_${id}`);
-  document.querySelector('#teamReportLink').setAttribute('href', `https://arxiv.idec.io/article/${teamInfo[id].reportID}`);
+  /**document.querySelector('#teamReportLink').setAttribute('href', `https://arxiv.idec.io/article/${teamInfo[id].reportID}`);**/
 }
