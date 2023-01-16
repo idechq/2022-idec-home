@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta property="og:title" content="international Directed Evolution Competition (iDEC)" />
+  <meta property="og:description" content="Building a scientific community for directed evolution" />
+  <meta property="og:image"
+    content="https://raw.githubusercontent.com/idechq/website-static/main/img/idecio_social_preview.png" />
+  <meta property="og:url" content="https://idec.io" />
+  <meta property="og:site_name" content="international Directed Evolution Competition (iDEC)" />
+  <meta name="twitter:title" content="international Directed Evolution Competition (iDEC)" />
+  <meta name="twitter:description" content="Building a scientific community for directed evolution" />
+  <meta name="twitter:image"
+    content=" https://raw.githubusercontent.com/idechq/website-static/main/img/idecio_social_preview.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image:alt" content="international Directed Evolution Competition (iDEC)" />
+  <title>iDEC - International Directed Evolution Competition</title> <!-- Bootstrap -->
+  <link href="../css/bootstrap-4.4.1.css" rel="stylesheet" /> <!-- iDEC CSS stylesheet -->
+  <link rel="stylesheet" href="../css/style.css" /> <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png" />
+  <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png" />
+  <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-icon-192x192.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png" />
+  <link rel="manifest" href="img/favicon/manifest.json" />
+  <meta name="msapplication-TileColor" content="#ffffff" />
+  <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png" />
+  <meta name="theme-color" content="#ffffff" />
+  <!-- Scripts for EmailJS for Contact form. Do not use `type="module"` here -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+  <script type="text/javascript" src="js/useEmailJS.js"></script>
+</head>
+
+<body>
+  <!-- NEB advert for postdocs -->
+  <div class="ad-banner fixed-bottom neb-colors text-center">
+    <div></div>
+    <div></div>
+    <div class="ad-banner-text"> Our sponsor New England Biolabs® is inviting applicants for Post-Doctoral
+      Fellowships!<span class="responsive-nbsp">&nbsp;</span> <br class="responsive-br" /><a
+        href="./assests/NEB_postdoc_ad.pdf" target="_blank"><button class="info-btn">Learn more</button></a> </div>
+    <div> <button type="button" class="ml-2 mb-1 mr-3 close" aria-label="Close" onclick="dismissBanner(this)"> <span
+          aria-hidden="true"><span class="ad-timer"></span> &times;</span> </button> </div>
+  </div>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light"> <a class="navbar-brand" href="index.html"><img
+        src="img/logo.png" alt="idec-logo" style="width: 40px" /></a> <button class="navbar-toggler" type="button"
+      data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+      aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active"> <a class="nav-link" href="#" style="color: #2a206a">Home <span
+              class="sr-only">(current)</span></a> </li>
+        <li class="nav-item"> <a class="nav-link" href="pages/news.html" style="color: #2a206a">News and
+            Announcements</a> </li>
+        <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #2a206a"> Registration </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown"> <a class="dropdown-item"
+              href="pages/details_for_registration.html" style="color: #2a206a">Details you need</a>
+            <div class="dropdown-divider"></div> <a class="dropdown-item" href="https://reg.idec.io"
+              style="color: #2a206a">Register for iDEC 2022</a>
+          </div>
+        </li>
+        <li class="nav-item"> <a class="nav-link" href="pages/about_us.html" style="color: #2a206a">About us</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="pages/calendar.html" style="color: #2a206a">iDEC calendar</a>
+        </li>
+        <li class="nav-item"> <a class="nav-link" href="pages/results.html" style="color: #2a206a;">Results</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="https://wiki.idec.io/resources/introduction/" target="_blank"
+            style="color: #2a206a">Resources</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="https://arxiv.idec.io/" target="_blank"
+            style="color: #2a206a">idecRχiv</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="pages/tracks_and_awards.html" style="color: #2a206a">Tracks and
+            awards</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="pages/requirements.html" style="color: #2a206a">Requirements</a>
+        </li>
+        <li class="nav-item"> <a class="nav-link" href="pages/ethics_biosafety_and_biosecurity.html"
+            style="color: #2a206a">Ethics, Biosafety and Biosecurity</a> </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0 d-none"> <input class="form-control mr-sm-2" type="search"
+          placeholder="Search" aria-label="Search" /> <button class="btn btn-outline-success my-2 my-sm-0"
+          type="submit"> Search </button> </form>
+    </div>
+  </nav>
+  <header>
+    <div class="jumbotron title-jumbo">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h1 class="text-left"><strong>International </strong></h1>
+            <h1 class="text-left"><strong>Directed Evolution</strong></h1>
+            <h1 class="text-left"><strong>Competition</strong></h1>
+            <h1 class="text-left"><strong>2022</strong></h1>
+            <p>&nbsp;</p>
+            <h4 class="text-center text-muted"> <span class="jumbo-quote">This is the way the life begins. Not with a
+                plan but a competition. - Dr. Martin Borch Jensen</span> </h4>
+            <p>&nbsp;</p>
+            <p class="text-center"> <a class="btn btn-green btn-outline-primary btn-lg font-weight-bolder btn-huge"
+                href="https://reg.idec.io/" role="button">Register Now</a><span class="btn-divider"></span><a
+                class="btn btn-outline-primary btn-lg font-weight-bolder btn-huge"
+                href="pages/details_for_registration.html" role="button">Registration Details</a> </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section style="padding-bottom: 1em">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 mt-4 mb-2 text-center">
+          <h2>News and Announcements</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-10 offset-sm-1 col-md-10 offset-md-1 col-lg-10 offset-lg-1 mt-2 mb-2">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title"> <a class="news-card-hyperlink" href="#">iDEC 2022 is over</a> </h5>
+              <p class="card-text"> We thank all teams and sponsors for making our competition a great successs. Please check the <a href="pages/results.html">Results</a> page for awards.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-10 offset-sm-1 col-md-10 offset-md-1 col-lg-10 offset-lg-1 mt-2 mb-2">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title"> <a class="news-card-hyperlink" href="pages/news.html#news2">iDEC introduction
+                  video is online now!</a> </h5>
+              <p class="card-subtitle text-muted mt-1 mb-1">30 April 2021</p>
+              <p class="card-text"> The iDEC introduction video is online now. Want to understand iDEC more
+                easily?<br />Our organizers introduce iDEC for you here! </p>
+              <!-- solution from https://css-tricks.com/fluid-width-video/ -->
+              <div class="videoWrapper"> <iframe width="700" height="394"
+                  src="https://www.youtube.com/embed/aU-B3Z6KP-U" title="YouTube video player" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe> </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 mt-2 mb-2">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title"> <a class="news-card-hyperlink" href="pages/news.html#news18">Bluepha becomes a
+                    Gold Sponsor in iDEC 2021!</a> </h5>
+                <p class="card-subtitle text-muted mt-1 mb-1"> September 28 2021 </p>
+                <p class="card-text" style="margin-bottom: 0"> And they will present the Bluepha Special Awards in the
+                  iDEC Festival! </p>
+                <p class="card-text" style="margin-bottom: 0"> <a href="http://en.bluepha.com/" target="_blank">Link to
+                    Bluepha »</a> </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 mt-2 mb-2">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title"> <a class="news-card-hyperlink" href="pages/news.html#news17">Free New England
+                    Biolabs products for iDEC teams</a> </h5>
+                <p class="card-subtitle text-muted mt-1 mb-1"> August 2 2021 </p>
+                <p class="card-text" style="margin-bottom: 0"> Check the application form we sent and get your free
+                  samples before Dec 31 2021!&nbsp;&nbsp;<a href="pages/news.html#news17" target="_blank">Read more
+                    »</a> </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 mt-2 mb-2">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title"> <a class="news-card-hyperlink" href="pages/news.html#news16">Free genetic
+                    sequence optimization by our new sponsor Ailurus Biotechnology</a> </h5>
+                <p class="card-subtitle text-muted mt-1 mb-1"> August 2 2021 </p>
+                <p class="card-text" style="margin-bottom: 0"> Get a $2999-worth of optimization service for free. Valid
+                  by Dec 31 2021! </p>
+                <p class="card-text" style="margin-bottom: 0"> <a href="pages/news.html#news16" target="_blank">Read
+                    more »</a> </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 mt-2 mb-2">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title"> <a class="news-card-hyperlink" href="pages/news.html#news14">New England Biolabs
+                    supports iDEC</a> </h5>
+                <p class="card-subtitle text-muted mt-1 mb-1">July 20 2021</p>
+                <p class="card-text" style="margin-bottom: 0"> We are tremendously grateful for support from NEB! </p>
+                <p class="card-text" style="margin-bottom: 0"> <a href="https://international.neb.com/"
+                    target="_blank">Link to NEB »</a> </p>
+                <p class="card-text" style="margin-bottom: 0">&nbsp;</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 text-center">
+          <p> <a class="btn btn-link" href="pages/news.html">All Announcements »</a> </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 mt-4 mb-2 text-center">
+          <h2>WHO WE ARE</h2>
+        </div>
+      </div>
+      <div class="row mt-4 mb-2">
+        <div class="col-sm-12 col-lg-12 col-xl-6">
+          <div class="row">
+            <div class="col-sm-6 col-lg-6">
+              <blockquote class="blockquote">
+                <p class="mb-0">What is iDEC?</p> <small class="blockquote-footer">The International Directed Evolution
+                  Competition (iDEC) is an international public welfare initiative dedicated to building a scientific
+                  community to facilitate education, technology sharing, and academic exchange.</small>
+              </blockquote>
+            </div>
+            <div class="col-sm-6 col-lg-6 parent"> <img class="img-1 img-fluid" src="img/bluepic1-trophy.png" alt="" />
+              <a href="pages/about_us.html" class="btn btn-outline-success">Read more</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-lg-12 col-xl-6">
+          <div class="row">
+            <div class="col-sm-6 col-lg-6">
+              <blockquote class="blockquote">
+                <p class="mb-0">How did it start?</p> <small class="blockquote-footer">iDEC is initiated by scientists
+                  and students engaged in genetic engineering research. Our initial volunteer team include members from
+                  different countries and cultural backgrounds.
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small>
+              </blockquote>
+            </div>
+            <div class="col-sm-6 col-lg-6 parent"> <img class="img-1 img-fluid" src="img/bluepic2-protein.png" alt="" />
+              <a href="#contact-us" class="btn btn-outline-success">Contact us</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 mt-5 mb-1 text-center">
+          <h2>OUR GOALS</h2>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-12 text-center"> <img class="rounded-circle" alt="140x140"
+            style="width: 250px; height: 250px" src="img/engage-idec.png" data-holder-rendered="true" />
+          <h5>Engage the academic community</h5>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 text-center"> <img class="rounded-circle" alt="140x140"
+            style="width: 250px; height: 250px" src="img/experiments-idec.png" data-holder-rendered="true" />
+          <h5>Promote research in Directed Evolution</h5>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 text-center"> <img class="rounded-circle" alt="140x140"
+            style="width: 250px; height: 250px" src="img/compete-idec.png" data-holder-rendered="true" />
+          <h5>Encourage best methods and practices</h5>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 text-center"> <img class="rounded-circle" alt="140x140"
+            style="width: 250px; height: 250px" src="img/1-1.png" data-holder-rendered="true" />
+          <h5>Share protocols and knowledge with peers and experts</h5>
+          <p> <a class="btn btn-link text-hide" href="https://wiki.idec.io/resources/introduction.html"
+              target="_blank">See our Resources on Directed Evolution »</a> </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-12 mt-4 mb-2 text-center">
+          <h2>COMPETITION TIMELINE</h2>
+        </div>
+      </div>
+    </div>
+    <div class="container timeline mb-2">
+      <ol>
+        <li>
+          <div class="text-center timeline-card"> <time>Mar - Apr</time>
+            <h5>Registration</h5> <img class="img img-fluid" alt="" src="img/timeline-registration.svg"
+              style="width: 200px; height: 200px" />
+          </div>
+        </li>
+        <li>
+          <div class="text-center timeline-card"> <time>May - Jun</time>
+            <h5>Induction Webinars</h5> <img class="img img-fluid" alt="" src="img/timeline-webinar.svg"
+              style="width: 200px; height: 200px" />
+          </div>
+        </li>
+        <li>
+          <div class="text-center timeline-card"> <time>Jun - Oct</time>
+            <h5>Hands-on Directed Evolution</h5> <img class="img img-fluid" alt="" src="img/timeline-experiment.svg"
+              style="width: 200px; height: 200px" />
+          </div>
+        </li>
+        <li>
+          <div class="text-center timeline-card"> <time>Aug - Sep</time>
+            <h5>Meetups</h5> <img class="img img-fluid" alt="" src="img/timeline-troubleshoot.svg"
+              style="width: 200px; height: 200px" />
+          </div>
+        </li>
+        <li>
+          <div class="text-center timeline-card"> <time>Oct</time>
+            <h5>iDEC Festival</h5> <img class="img img-fluid" alt="" src="img/timeline-conference.svg"
+              style="width: 200px; height: 200px" />
+          </div>
+        </li>
+        <li></li>
+      </ol>
+      <div class="arrows"> <button class="arrow arrow__prev disabled" disabled> <img src="img/prev.svg"
+            alt="prev timeline arrow" /> </button> <button class="arrow arrow__next"> <img src="img/next.svg"
+            alt="next timeline arrow" /> </button> </div>
+    </div>
+  </section>
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 mt-5 mb-2 text-center">
+          <h2>TRACKS</h2>
+          <p>Compete in one, two or three areas of Directed Evolution</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 col-lg-4 text-center">
+          <h3>Molecules</h3> <img src="img/3-1.png" style="width: 300px; height: 300px" alt="" />
+          <p class="text-muted" style="font-size: 1.2em"> Enhance biomacromolecule functions </p>
+          <p> <a class="btn btn-link" href="pages/tracks_and_awards.html#track1">View details »</a> </p>
+        </div>
+        <div class="col-sm-6 col-lg-4 text-center">
+          <h3>Pathways</h3> <img src="img/3-2.png" style="width: 300px; height: 300px" alt="" />
+          <p class="text-muted" style="font-size: 1.2em"> Optimize metabolic pathways or circuits </p>
+          <p> <a class="btn btn-link" href="pages/tracks_and_awards.html#track2">View details »</a> </p>
+        </div>
+        <div class="col-sm-6 col-lg-4 text-center">
+          <h3>Genomes</h3> <img src="img/3-3.png" style="width: 300px; height: 300px" alt="" />
+          <p class="text-muted" style="font-size: 1.2em"> Improve or create new strains </p>
+          <p> <a class="btn btn-link" href="pages/tracks_and_awards.html#track3">View details »</a> </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 mt-5 mb-4 text-center">
+          <h2>REQUIREMENTS</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 col-lg-3 text-center">
+          <h3>A Report</h3> <img src="img/2-2.1.png" style="width: 200px; height: 200px" alt="" />
+          <p> <a class="btn btn-link" href="pages/requirements.html#report">View details »</a> </p>
+        </div>
+        <div class="col-sm-6 col-lg-3 text-center">
+          <h3>A Wiki</h3> <img src="img/2-4.1.png" style="width: 200px; height: 200px" alt="" />
+          <p> <a class="btn btn-link" href="pages/requirements.html#wiki">View details »</a> </p>
+        </div>
+        <div class="col-sm-6 col-lg-3 text-center">
+          <h3>A Poster</h3> <img src="img/2-1.1.png" style="width: 200px; height: 200px" alt="" />
+          <p> <a class="btn btn-link" href="pages/requirements.html#poster">View details »</a> </p>
+        </div>
+        <div class="col-sm-6 col-lg-3 text-center">
+          <h3>A Presentation</h3> <img src="img/2-3.1.png" style="width: 200px; height: 200px" alt="" />
+          <p> <a class="btn btn-link" href="pages/requirements.html#presentation">View details »</a> </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 mt-5 mb-4 text-center">
+          <h2>AWARDS</h2> <span style="color: lightseagreen; font-size: 20px"><i class="fas fa-medal"></i></span>
+        </div>
+        <div class="row">
+          <div class="col-sm-6 col-lg-6 text-center">
+            <div class="row">
+              <div class="col-sm-6 col-lg-6 text-center"> <img class="img img-fluid" alt=""
+                  src="img/general-awards.png" /> </div>
+              <div class="col-sm-6 col-lg-6 text-center">
+                <h3>General Awards</h3>
+                <p class="text-muted" style="font-size: 1.2em"> The more you participate, the higher the rank you get.
+                </p>
+                <p> <a class="btn btn-link" href="pages/tracks_and_awards.html#general_awards">View details »</a> </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-6 text-center">
+            <div class="row">
+              <div class="col-sm-6 col-lg-6 text-center"> <img class="img img-fluid" alt=""
+                  src="img/track-awards.png" /> </div>
+              <div class="col-sm-6 col-lg-6 text-center">
+                <h3>Track Awards</h3>
+                <p class="text-muted" style="font-size: 1.2em"> To the best evolution machines or outcomes in each
+                  track. </p>
+                <p> <a class="btn btn-link" href="pages/tracks_and_awards.html#track_awards">View details »</a> </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-6 text-center">
+            <div class="row">
+              <div class="col-sm-6 col-lg-6 text-center"> <img class="img img-fluid" alt=""
+                  src="img/single-awards.png" /> </div>
+              <div class="col-sm-6 col-lg-6 text-center">
+                <h3>Single Awards</h3>
+                <p class="text-muted" style="font-size: 1.2em"> Best hardware, Best software, Best algorithm,
+                  etc.<br />To the best of the best in a unique area. </p>
+                <p> <a class="btn btn-link" href="pages/tracks_and_awards.html#single_awards">View details »</a> </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-6 text-center">
+            <div class="row">
+              <div class="col-sm-6 col-lg-6 text-center"> <img class="img img-fluid" alt=""
+                  src="img/special-awards.png" /> </div>
+              <div class="col-sm-6 col-lg-6 text-center">
+                <h3>Special Awards</h3>
+                <p class="text-muted" style="font-size: 1.2em"> To special contributions in reporter systems, genetic
+                  diversification methods, or screening strategies. </p>
+                <p> <a class="btn btn-link" href="pages/tracks_and_awards.html#special_awards">View details »</a> </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="jumbotron">
+      <div class="container">
+        <div class="row">
+          <div class="text-center col-md-8 col-12 mx-auto">
+            <p class="lead"> To consider biosafety, biosecurity, and ethical issues is crucial to establish suitable
+              precautions. </p>
+          </div>
+          <div class="text-center col-md-8 col-12 mx-auto">
+            <p class="lead"> At iDEC, we are committed to teaching how to conduct research responsibly. </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4 col-auto mx-auto"> <a class="btn btn-block btn-lg btn-success"
+              href="pages/ethics_biosafety_and_biosecurity.html" title="">Read more</a> </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container">
+      <div class="row mb-4 mt-4">
+        <div class="col-lg-12 text-center">
+          <h2>Our Gold Sponsor</h2>
+        </div>
+      </div>
+      <div class="row mb-5 mt-2">
+        <div class="col-lg-12 spons-logo-wrapper"> <a class="spons-logo" href="http://en.bluepha.com/"
+            target="_blank"><img src="img/sponsors_collab/Bluepha_logo.webp" alt="Bluepha logo" height="120px"
+              width="auto" /></a> </div>
+      </div>
+      <div class="row mb-4 mt-5">
+        <div class="col-lg-12 text-center">
+          <h2>We are also generously sponsored by</h2>
+        </div>
+      </div>
+      <div class="row mb-4 mt-2">
+        <div class="col-lg-12 spons-logo-wrapper"> <a class="spons-logo" href="https://www.genscript.com/"
+            target="_blank"><img src="img/sponsors_collab/GenScript_logo.png" alt="GenScript logo" height="120px"
+              width="auto" /></a> <a class="spons-logo" href="https://international.neb.com/" target="_blank"><img
+              src="img/sponsors_collab/NEB_LOGO_High_Resolution.jpg" alt="NEB logo" height="120px" width="auto" /></a>
+          <a class="spons-logo" href="https://www.linkedin.com/company/ailurus-biotech/" target="_blank"><img
+              src="img/sponsors_collab/Ailurus_Biotechnology_logo.png" alt="Ailurus Biotechnology logo" height="120px"
+              width="auto" /></a>
+        </div>
+      </div>
+      <div class="row mb-4 mt-5">
+        <div class="col-lg-12 text-center">
+          <h2>We work together with</h2>
+        </div>
+      </div>
+      <div class="row mb-4 mt-2">
+        <div class="col-lg-12 spons-logo-wrapper"> <a class="spons-logo" href="https://www.scottishtecharmy.org/"
+            target="_blank"><img src="img/sponsors_collab/logo-STA.png" alt="STA logo" height="120px"
+              width="auto" /></a> <a class="spons-logo" href="https://ccic8.site/" target="_blank"><img
+              src="img/sponsors_collab/logo-CCiC.jpg" alt="CCiC logo" height="120px" width="auto" /></a> </div>
+      </div>
+      <div class="row mb-4 mt-5">
+        <div class="col-lg-12 text-center">
+          <h2>You can support us through</h2>
+        </div>
+      </div>
+      <div class="row mt-2">
+        <div class="col-lg-12 spons-logo-wrapper"> <a class="spons-logo" href="https://smile.amazon.co.uk/ch/SC050826"
+            target="_blank"><img src="img/sponsors_collab/MAINLOGO_UK_AmazonSmile.png" alt="STA logo" height="120px"
+              width="auto" /></a> </div>
+      </div>
+    </div>
+  </section>
+  <section id="contact-us">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 mt-4 mb-2 text-center">
+          <h2> Questions? Reach out to us!&nbsp;
+            <!-- Button trigger modal --> <button type="button" class="btn btn-primary btn-sm" data-toggle="modal"
+              data-target="#exampleModalLong" style="border-radius: 80%; margin-left: 10 px"> <i
+                class="fas fa-info-circle"></i> </button>
+          </h2>
+        </div>
+      </div> <!-- Modal -->
+      <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle"> Who to contact </h5> <button type="button"
+                class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <tbody>
+                  <tr>
+                    <td>Donation and sponsorship</td>
+                    <td> iDEC is a new project dedicated to promoting the development and application of directed
+                      evolution. Hope to support us or cooperate: spons@idechq.org </td>
+                  </tr>
+                  <tr>
+                    <td>Set a challenge!</td>
+                    <td> iDEC recruits challenge topics from scientists and the biotechnology industry! If you want to
+                      challenge our participating teams: challenge@idechq.org </td>
+                  </tr>
+                  <tr>
+                    <td>Teams</td>
+                    <td> Want to participate in iDEC? If you have any questions: qa@idechq.org </td>
+                  </tr>
+                  <tr>
+                    <td>Help</td>
+                    <td>If you need help in iDEC: sp@idechq.org</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer"> <button type="button" class="btn btn-primary" data-dismiss="modal"> Close
+              </button> </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="card-footer">
+    <div class="row mt-3">
+      <div class="col-12 col-md-8 mx-auto">
+        <div class="jumbotron jumbo-form">
+          <div class="text-center col-12">
+            <!-- CONTACT FORM https://github.com/jonmbake/bootstrap3-contact-form -->
+            <form id="fcf-form-id" class="text-center" method="post">
+              <!-- action="php/contact-form-process.php" -->
+              <div class="form-group"> <input type="hidden" name="contact_number" /> <label class="font-weight-bold"
+                  for="name">Name</label> <input type="text" class="form-control" id="Name" name="from_name"
+                  placeholder="Name" aria-describedby="nameHelp" /> <span id="nameHelp" class="form-text text-muted"
+                  style="display: none">Please enter your name.</span> </div>
+              <div class="form-group"> <label class="font-weight-bold" for="email">E-Mail</label> <input type="email"
+                  class="form-control" id="Email" name="from_email" placeholder="Email Address"
+                  aria-describedby="emailHelp" /> <span id="emailHelp" class="form-text text-muted"
+                  style="display: none">Please enter a valid e-mail address.</span> </div>
+              <div class="form-group"> <label class="font-weight-bold" for="message">Message</label> <textarea rows="10"
+                  cols="100" class="form-control" id="Message" name="message" placeholder="Message"
+                  aria-describedby="messageHelp"></textarea> <span id="messageHelp" class="form-text text-muted"
+                  style="display: none">Please enter a message.</span> </div> <button type="submit" id="fcf-button"
+                class="btn btn-lg" style="background-color: #2a206a; color: #ffffff" value="Send"> Send </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <p class="text-white"> The first iDEC will be held at the University of Edinburgh, which is to commemorate
+              the adventurous voyage of Charles Darwin, an outstanding alumnus of this alma mater. </p>
+            <div class="container">
+              <div class="row">
+                <div class="col-12 col-md-8 mx-auto text-center"> <a
+                    href="https://www.facebook.com/InternationalDirectedEvolutionCompetition"
+                    class="icon-button facebook"><i class="fa fa-facebook"></i><span></span></a> <a
+                    href="https://www.instagram.com/idechq/" class="icon-button instagram"><i
+                      class="fa fa-instagram"></i><span></span></a> <a href="https://twitter.com/iDEC2021"
+                    class="icon-button twitter"><i class="fa fa-twitter"></i><span></span></a> <a
+                    href="https://www.linkedin.com/company/international-directed-evolution-competition%EF%BC%88idec%EF%BC%89/"
+                    class="icon-button linkedin"><i class="fa fa-linkedin"></i><span></span></a> <a
+                    href="https://www.youtube.com/channel/UC_qBQm9YArg8rK4oWO63_gQ" class="icon-button youtube"><i
+                      class="fa fa-youtube"></i><span></span></a> <a href="https://github.com/idechq"
+                    class="icon-button github"><i class="fa fa-github"></i><span></span></a> </div>
+              </div>
+            </div>
+            <p class="text-white-50"> The International Directed Evolution Competition (iDEC) is a Scottish Charitable
+              Incorporate Organisation (SCIO), registered in Scotland, with charity number：SC050826 </p>
+            <p class="text-white-50"> Copyright &copy;2021 iDEC. All rights reserved. </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap-4.4.1.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/banner.js"></script>
+  <script src="js/2a0c96cd0e.js" crossorigin="anonymous"></script>
+  <script src="js/timeline.js"></script>
+  <script src="https://hammerjs.github.io/dist/hammer.js"></script>
+
+</body>
+
+</html>
