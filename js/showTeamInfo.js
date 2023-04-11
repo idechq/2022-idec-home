@@ -59,6 +59,10 @@ var teamInfo = {
     "name": "LZU-CHINA",
     "reportID" : "000009",
   },
+   "DU_DTU_NSUT-Delhi": {
+    "name": "OriGeneNation",
+    "reportID" : "000009",
+  },
 };
 
 function updateTeamInfoModal(id) {
