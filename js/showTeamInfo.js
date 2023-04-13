@@ -1,72 +1,68 @@
 var teamInfo = {
   "Team_GEnoM_-_iGEM_IIT_MADRAS": {
     "name": "GEnoM - iGEM IIT Madras",
-    "reportID" : "000000",
+    "reportID": "Z5XOEN4HNZ0M",
   },
   "NAU-CHINA-DE": {
     "name": "NAU-CHINA-DE",
-    "reportID" : "000001",
+    "reportID": "XYRRODDKSVU3",
   },
   "NEFU_China": {
     "name": "NEFU_China",
-    "reportID" : "000002",
+    "reportID": "2S60D5DQ26YN",
   },
   "USTC": {
     "name": "USTC",
-    "reportID" : "000003",
+    "reportID": "F65LLEROY7U1",
   },
   "HUST-China": {
     "name": "HUST-China",
-    "reportID" : "000003",
+    "reportID": "GROUJK6N46VI",
   },
   "SUSTech_Shenzhen": {
     "name": "SUSTech_Shenzhen_2022",
-    "reportID" : "000005",
+    "reportID": "PH3X5UFPJTDL",
   },
   "VE_CPU": {
     "name": "VE-CPU",
-    "reportID" : "000006",
+    "reportID": "T2CNH1XL2N8Z",
   },
   "Edinburgh-UHAS_Ghana": {
     "name": "Edinburgh-UHAS_Ghana",
-    "reportID": "000007",
+    "reportID": "6NFQ5QUXVHPU",
   },
   "OUC_China": {
     "name": "OUC_China",
-    "reportID" : "000008",
+    "reportID": "JI32L9JLHK85",
   },
   "OUC-Marine_Drugs": {
     "name": "OUC-Marine Drugs",
-    "reportID" : "000009",
+    "reportID": "N1JQUWXWO3DE",
   },
   "CSU_CHINA": {
     "name": "CSU_CHINA2022",
-    "reportID" : "000009",
-  },
-  "Team_GEnoM_-_iGEM_IIT_MADRAS": {
-    "name": "Team GEnoM - iGEM IIT MADRAS",
-    "reportID" : "000009",
+    "reportID": "FD21I4NJCZQZ",
   },
   "Tongji_China": {
     "name": "Tongji_China",
-    "reportID" : "000009",
+    "reportID": "X9NKIEB1ODW8",
   },
   "CPU_CHINA": {
     "name": "CPU_CHINA",
-    "reportID" : "000009",
+    "reportID": "LLOLRDVFRZ0D",
   },
   "LZU-CHINA": {
     "name": "LZU-CHINA",
-    "reportID" : "000009",
+    "reportID": "9CU8HHEE6WUW",
   },
-   "DU_DTU_NSUT-Delhi": {
+  "DU_DTU_NSUT-Delhi": {
     "name": "OriGeneNation",
-    "reportID" : "000009",
+    "reportID": "14IOZ6L1J4F2",
   },
 };
 
 function updateTeamInfoModal(id) {
   document.querySelector('#teamInfoModalLabel').innerHTML = teamInfo[id].name;
   document.querySelector('#teamWikiLink').setAttribute('href', `https://idec-teams.github.io/2022_${id}`);
-  /**document.querySelector('#teamReportLink').setAttribute('href', `https://arxiv.idec.io/article/${teamInfo[id].reportID}`);**/
+  document.querySelector('#teamReportLink').setAttribute('href', `https://arxiv.idec.io/article/${teamInfo[id].reportID}`);
 }
